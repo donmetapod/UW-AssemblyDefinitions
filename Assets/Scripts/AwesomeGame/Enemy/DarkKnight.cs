@@ -1,14 +1,19 @@
 using UnityEngine;
+using SharedData;
+using SharedComponents;
 
-public class DarkKnight : MonoBehaviour
+namespace AwesomeGame.Enemy
 {
-    CharacterConfiguration _characterConfiguration;
-            
-    private void OnTriggerEnter(Collider other)
+    public class DarkKnight : MonoBehaviour
     {
-        if (other.CompareTag("Player"))
+        CharacterConfiguration _characterConfiguration;
+            
+        private void OnTriggerEnter(Collider other)
         {
-            GetComponent<Health>().CurrentHealth -= 1;
+            if (other.CompareTag("Player"))
+            {
+                GetComponent<Health>().CurrentHealth -= 1;
+            }
         }
     }
 }

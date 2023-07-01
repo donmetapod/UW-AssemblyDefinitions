@@ -1,14 +1,19 @@
 using UnityEngine;
+using SharedData;
 
-public class Player : MonoBehaviour
+namespace AwesomeGame.Player
 {
-    [SerializeField]
-    Rigidbody2D _rigidbody2D;
-    [SerializeField]
-    CharacterConfiguration _characterConfiguration;
-    
-    public void Jump()
+    public class Player : MonoBehaviour
     {
-        _rigidbody2D.AddForce(_characterConfiguration.JumpForce, ForceMode2D.Impulse);
+        [SerializeField]
+        Rigidbody2D _rigidbody2D;
+        [SerializeField]
+        CharacterConfiguration _characterConfiguration;
+    
+        public void Jump()
+        {
+            _rigidbody2D.AddForce(_characterConfiguration.JumpForce, ForceMode2D.Impulse);
+        }
     }
 }
+

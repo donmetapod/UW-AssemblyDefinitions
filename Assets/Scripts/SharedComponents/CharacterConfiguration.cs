@@ -1,7 +1,10 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CharacterConfiguration", menuName = "Scriptable Objects/Create Character Configuration Asset")]
-public class CharacterConfiguration : ScriptableObject
+namespace SharedData
 {
-    public Vector2 JumpForce;
+    [CreateAssetMenu(fileName = "CharacterConfiguration", menuName = "Scriptable Objects/Create Character Configuration Asset")]
+    public class CharacterConfiguration : ScriptableObject
+    {
+        public Vector2 JumpForce;
+    } 
 }
