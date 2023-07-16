@@ -1,12 +1,12 @@
 using UnityEngine;
-using SharedData;
-using SharedComponents;
+using AwesomeGame.SharedData;
+using AwesomeGame.SharedComponents;
 
 namespace AwesomeGame.Enemy
 {
     public class DarkKnight : MonoBehaviour
     {
-        CharacterConfiguration _characterConfiguration;
+        [SerializeField] CharacterConfiguration _characterConfiguration;
             
         private void OnTriggerEnter(Collider other)
         {

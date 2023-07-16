@@ -1,5 +1,5 @@
 using UnityEngine;
-using SharedData;
+using AwesomeGame.SharedData;
 
 namespace AwesomeGame.Player
 {
@@ -15,5 +15,7 @@ namespace AwesomeGame.Player
             _rigidbody2D.AddForce(_characterConfiguration.JumpForce, ForceMode2D.Impulse);
         }
     }
+
 }
+
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SharedComponents
+namespace AwesomeGame.SharedComponents
 {
     public class Health : MonoBehaviour
     {
