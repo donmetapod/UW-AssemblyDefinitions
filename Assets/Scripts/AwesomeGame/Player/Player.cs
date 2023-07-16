@@ -14,8 +14,6 @@ namespace AwesomeGame.Player
         {
             _rigidbody2D.AddForce(_characterConfiguration.JumpForce, ForceMode2D.Impulse);
         }
+
     }
-
 }
-
-
