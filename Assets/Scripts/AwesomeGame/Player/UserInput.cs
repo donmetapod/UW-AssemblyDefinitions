@@ -2,14 +2,18 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-public class UserInput : MonoBehaviour
+namespace AwesomeGame.Player
 {
-    [SerializeField] UnityEvent OnSpacebarPressed;
-    void Update()
+    public class UserInput : MonoBehaviour
     {
-        if(Keyboard.current.spaceKey.wasPressedThisFrame)
+        [SerializeField] UnityEvent OnSpacebarPressed;
+        void Update()
         {
-            OnSpacebarPressed?.Invoke();
+            if(Keyboard.current.spaceKey.wasPressedThisFrame)
+            {
+                OnSpacebarPressed?.Invoke();
+            }
         }
-    }
+    } 
 }
+
